@@ -1,7 +1,12 @@
 class Conta:
+    #---- Usou o underline pois é atributo PRIVATE
     def __init__(self, nro_agencia, saldo=0):
+        #--- Privado
         self._saldo = saldo
+        #--- Público 
         self.nro_agencia = nro_agencia
+
+
 
     def depositar(self, valor):
         # ...

@@ -19,6 +19,7 @@ class Carro(Veiculo):
     pass
 
 
+#--- Caminhão vai ter além da herança, características próprias 
 class Caminhao(Veiculo):
     def __init__(self, cor, placa, numero_rodas, carregado):
         super().__init__(cor, placa, numero_rodas)
@@ -28,6 +29,8 @@ class Caminhao(Veiculo):
         print(f"{'Sim' if self.carregado else 'Não'} estou carregado")
 
 
+
+#--- Criando os objetos 
 moto = Motocicleta("preta", "abc-1234", 2)
 carro = Carro("branco", "xde-0098", 4)
 caminhao = Caminhao("roxo", "gfd-8712", 8, True)
